@@ -4,6 +4,18 @@ import './index.css';
 import './i18n';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { useTranslation } from "react-i18next"
+import axios from 'axios'
+import setLang from './axiosSettings'
+
+let lang 
+
+if(localStorage.getItem('i18nextLng')) {
+  lang = localStorage.getItem('i18nextLng')
+  setLang( lang)
+} 
+
+
 
 ReactDOM.render(
   <React.StrictMode>

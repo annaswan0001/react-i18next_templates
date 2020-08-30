@@ -7,3 +7,7 @@ const {t,i18n} = useTranslation(["nav","product"]); //use several files with tra
 
 <h1>{t('APPLICATIONS')}</h1> //one namespace
 <h1>{t('nav:APPLICATIONS')}</h1>//several namespace
+
+
+
+To get right value from backand we should add axious headers and change it with change langueges!!!!!!!
